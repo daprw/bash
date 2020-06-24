@@ -9,6 +9,8 @@
 # Tools - bwm-ng, bind-utils, tcpdump, netstat, ss, netcat, whois, traceroute, mtr, vmstat, iostat, sysstat, syslog, nmap, smokeping
 #
 # Tools list subject to change as platforms start implementing them by default on base images for cloud platforms.
+#
+# Usage - ./utility_belt.sh <os type> --> You can enter 'redhat' or 'debian' as first argument.
 
 
 # Greet the user
