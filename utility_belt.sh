@@ -21,7 +21,7 @@ if [ $1 = "redhat" ]
 then
 	redhat_tools="bind bind-utils dropwatch nmap traceroute mtr nc ss vmstat iostat sysstat whois tcpdump smokeping"
 	echo "This is redhat based OS, the yum package management tool will be used to install the packages.."
-	sleep 5s
+	sleep 3s
 	sudo yum install -y $redhat_tools
 elif [ $1 = "debian" ]
 then
