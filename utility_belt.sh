@@ -9,6 +9,8 @@
 # Tools - bwm-ng, bind-utils, tcpdump, netstat, ss, netcat, whois, traceroute, mtr, vmstat, iostat, sysstat, syslog, nmap, smokeping
 #
 # Tools list subject to change as platforms start implementing them by default on base images for cloud platforms.
+#
+# Usage - ./utility_belt.sh <os type> --> You can enter 'redhat' or 'debian' as first argument.
 
 
 # Greet the user
@@ -19,7 +21,7 @@ if [ $1 = "redhat" ]
 then
 	redhat_tools="bind bind-utils dropwatch nmap traceroute mtr nc ss vmstat iostat sysstat whois tcpdump smokeping"
 	echo "This is redhat based OS, the yum package management tool will be used to install the packages.."
-	sleep 5s
+	sleep 3s
 	sudo yum install -y $redhat_tools
 elif [ $1 = "debian" ]
 then
