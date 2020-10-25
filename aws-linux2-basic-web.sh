@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# Rudimentary bash shell script that installs basic apache web server
-# on AWS EC2 instance running Amazon Linux 2 AMI. Can be used in user
-# data scripts as well for testing purposes. 
+# Rudimentary bash shell bootstrap script that installs basic apache web server
+# on AWS EC2 instance running Amazon Linux 2 AMI. Can be used in user data scripts as well for testing purposes. 
 
 yum update -y 
 yum install -y httpd
