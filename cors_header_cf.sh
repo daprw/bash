@@ -2,7 +2,7 @@
 
 # Title: cors_header_cf.sh
 #
-# Description: This script seeks to allow users to enable CORS (Cross Origin Resrouce Sharing) on all containers for a given region.
+# Description: This script seeks to allow users to enable CORS (Cross Origin Resource Sharing) on all containers for a given region.
 #              The goal is the have the user enter username && api key, the script takes over and authenticates against the identity
 #              endpoint (https://identity.api.rackspacecloud.com/v2.0/tokens). Then we want to get relevant details so the cloud files
 #              endpoints for storage operations and then the AUTH TOKEN generated as part of the identity call we just made.
