@@ -1,7 +1,7 @@
 #cloud-config
 #
 # User data file you can use to fix up ssh login to EC2 instance.
-# Step 1 - create new ssh keys from the device you are logging in from (ie ssh-keygen cmd).
+# Step 1 - create new ssh keys from the device you are logging in from (ie ssh-keygen cmd or via AWS Mgmt console).
 # Step 2 - copy public key (ie id_rsa.pub or whatever you have named it using ssh-keygen cmd).
 # Step 3 - replace 'username' below with your desired user that you want created.
 # Step 4 - replace 'ssh-rsa blahBLAH' with the contents of your public key copied from Step 2.
