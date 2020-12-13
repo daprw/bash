@@ -1,3 +1,3 @@
 # bash
 
-A collection of scripts for tasks I have come across throughout my career.
+A collection of scripts I have written for various tasks.
