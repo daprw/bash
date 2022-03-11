@@ -11,7 +11,9 @@
 echo "Ctrl+C to exit the script when you have finished the testing"
 read -p "Interface name: " intName
 
-while true;
-    do echo "$(date): " >> ethtool_stats.log ; echo "$(ethtool -S $intName | grep exceeded)" >> ethtool_stats.log; sleep 3;
+while true
+do 
+    echo "$(date): " >> ethtool_stats.log ; echo "$(ethtool -S $intName | grep exceeded)" >> ethtool_stats.log; sleep 3;
+    echo "$(date): " >> sys_net_stats.log ; echo "$(ethtool -S $(ls /sys/class/net|grep -v lo)|grep 'exceed')" >> sys_net_stats.log; sleep 3;
 done
 
