@@ -8,10 +8,10 @@
 #
 # This is not optimized and was used to quickly test bandwidth limits between EC2 instances and PPS limits.
 
+echo "Ctrl+C to exit the script when you have finished the testing"
 read -p "Interface name: " intName
 
 while true;
-    do echo "$(date): " >> ethtool_stats.log ; echo "$(ethtool -S $intName | grep exceeded)" >> ethtool_stats.log &;
+    do echo "$(date): " >> ethtool_stats.log ; echo "$(ethtool -S $intName | grep exceeded)" >> ethtool_stats.log; sleep 3;
 done
 
-echo "Run the jobs command to see the running process when you are ready to kill it."
