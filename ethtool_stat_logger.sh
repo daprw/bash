@@ -18,6 +18,6 @@ while true
 do 
     echo "$(date): " >> ethtool_stats.log ; echo "$(ethtool -S $intName | grep exceeded)" >> ethtool_stats.log; sleep 3;
     echo "$(date): " >> sys_net_stats.log ; echo "$(ethtool -S $(ls /sys/class/net|grep -v lo)|grep 'exceed')" >> sys_net_stats.log; sleep 3;
-    echo "$(date): " >> netlink.log ; echo "$(cat /proc/net/netlink)" >> netlink.log; sleep 2;
+    #echo "$(date): " >> netlink.log ; echo "$(cat /proc/net/netlink)" >> netlink.log; sleep 2;
 done
 
