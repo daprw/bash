@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # This is something thrown together quickly to get specific "exceeded" statistics from ethtool -S output sent to a log file.
 # This is a companion tool that should be used if you are testing theoretical pps / bandwidth limits with a tool like iperf.
 # You want to have the script running before you start your testing to ensure you have data prior to the test and after to compare to.
