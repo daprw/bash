@@ -35,23 +35,6 @@ sed -i 's/\,//g' service_catalog_cf
 echo "Done cleaning."
 sleep 2s
 
-## Had some trouble getting auth to work with these blocks. Moved to the if/else statements, will debug later.
-# Give the user the auth token to paste in as variable.
-#echo "Printing auth token to screen to copy.."
-#sleep 2s
-#grep -i 'id:' service_catalog_cf
-#echo "Please copy the auth token above (text only, leave out spaces).."
-#read -sp 'Enter the authentication token: ' AUTHTOKEN
-#echo "Moving on to setting up Cloud Files endpoints.."
-
-# Set variables for cloud files endpoints for user account.
-#DFW_CF=$(grep -io 'https://storage101.dfw1.*' service_catalog_cf)
-#IAD_CF=$(grep -io 'https://storage101.iad3.*' service_catalog_cf)
-#ORD_CF=$(grep -io 'https://storage101.ord1.*' service_catalog_cf)
-#HKG_CF=$(grep -io 'https://storage101.hkg1.*' service_catalog_cf)
-#SYD_CF=$(grep -io 'https://storage101.syd2.*' service_catalog_cf)
-#echo "Finished setting up endpoints."
-
 echo "Retrieving container list.."
 sleep 3s
 
