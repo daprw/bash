@@ -1,0 +1,10 @@
+# Testing logger pod for deployment in k8s.
+apiVersion: v1
+kind: Pod
+metadata:
+  name: logger
+spec:
+  containers:
+    - name: logger
+      image: nginx
+      args: [/bin/bash, -c, 'while true; do echo $(date) INFO: Transaction submitted by user email $(openssl rand -hex 12)@$(shuf -n1 -e gmail.com yahoo.com hotmail.com outlook.com aol.com protonmail.com icloud.com example.co.uk sample.org pinterest.co.uk ipinfo.io); sleep 1; echo $(date) WARN: User2 has initiated protocol ORANGE; sleep 2; done']
