@@ -9,6 +9,7 @@
 # regex pattern for most names part 2: \b([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+
 # regex pattern for most names part 3: ^([a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)
 # regex pattern for emails RFC 5322: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+# Regex email: [^@]*@(.*)
 # email regex - "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
 #
 #
